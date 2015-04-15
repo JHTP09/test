@@ -10,6 +10,7 @@ public class Time
     private int minute;
     private int second;
     
+    // Set time
     public void setTime( int h, int m, int s )
     {
         if ( h >= 0 && h < 24 && m >= 0 && m < 60 && s >= 0 && s < 60 )
@@ -22,6 +23,7 @@ public class Time
             throw new IllegalArgumentException( "hour, minute, and/or second was out of range" );
     }
     
+    // Return string representing universal time format
     public String toUniversalString()
     {
         return String.format( "%02d:%02d:%02d", hour, minute, second );
