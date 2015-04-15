@@ -9,18 +9,18 @@ public class TimeTest
     {
         Time time = new Time();
 
-        System.out.print( "The initial universal time is: " );
-        System.out.println( time.toUniversalString() );
-        System.out.print( "The initial standard time is: " );
-        System.out.println( time.toString() );
+        System.out.printf( "The initial universal time is: %s\n",
+                time.toUniversalString() );
+        System.out.printf( "The initial standard time is: %s\n",
+                time.toString() );
         System.out.println(); // output a blank line
         
         // change time and output updated time
         time.setTime( 13, 27, 6 );
-        System.out.print( "Universal time after setTime is: " );
-        System.out.println( time.toUniversalString() );
-        System.out.print( "Standard time after setTime is: " );
-        System.out.println( time.toString() );
+        System.out.printf( "Universal time after setTime is: %s\n",
+                time.toUniversalString() );
+        System.out.printf( "Standard time after setTime is: %s\n",
+                time.toString() );
         System.out.println(); // output a blank line
         
         // attempt to set time with invalid values
