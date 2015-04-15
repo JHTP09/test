@@ -1,7 +1,6 @@
 package examples.time;
 
 /**
- *
  * @author Mohamed Elsayed
  */
 public class TimeTest 
@@ -28,11 +27,11 @@ public class TimeTest
         try
         {
             time.setTime( 99, 99, 99 ); // all values out of range
-        } // end try
+        }
         catch ( IllegalArgumentException e )
         {
             System.out.printf( "Exception: %s\n\n", e.getMessage() );
-        } // end catch
+        }
         
         // display time after attempt to set invalid values
         System.out.println( "After attempting invalid settings:" );
