@@ -10,6 +10,7 @@ public class Time
     private int minute;
     private int second;
     
+    // Set time
     public void setTime( int h, int m, int s )
     {
         if ( h >= 0 && h < 24 && m >= 0 && m < 60 && s >= 0 && s < 60 )
